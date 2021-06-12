@@ -19,13 +19,13 @@ namespace CadastroProdutos.Models
         public string Descricao { get; set; }
 
         [Range(0.01, 14.00, ErrorMessage = "Peso Obrigatório entre 0,01kg e 14kg")]
-        public double Peso { get; set; }
+        public decimal Peso { get; set; }
 
         [Required(ErrorMessage = "Este campo é obrigatório!")]
         public string Categoria { get; set; }
 
         [Range(5.50, 100.00, ErrorMessage = "Valor obrigatório entre R$ 5,50 e R$ 100,00")]
         [Required(ErrorMessage = "Este campo é obrigatório!")]
-        public double Vunit { get; set; }
+        public decimal Vunit { get; set; }
     }
 }
